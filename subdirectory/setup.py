@@ -1,5 +1,8 @@
 from setuptools import setup
+import os
 
+
+print(os.getcwd())
 
 setup(
     name='hello',

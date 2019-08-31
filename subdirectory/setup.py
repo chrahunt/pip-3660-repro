@@ -2,7 +2,9 @@ from setuptools import setup
 import os
 
 
-print(os.getcwd())
+with open('/tmp/user/1000/tmp.XLCUW8ZSc0/{}-cwd.txt'.format(os.getpid()), 'w') as f:
+    f.write(os.getcwd())
+
 
 setup(
     name='hello',
